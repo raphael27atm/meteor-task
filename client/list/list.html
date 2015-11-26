@@ -1,0 +1,17 @@
+<template name="list">
+	<div class="row">
+		<div class="col-xs-12">
+			{{#each tasks}}
+				<div class="row">
+					<div class="col-xs-11">
+						{{formatData}} - {{name}}
+					</div>
+					<div class="col-xs-1">
+						<button class="btn btn-danger">Delete</button>
+					</div>		
+				</div>
+				<hr>
+			{{/each}}
+		</div>
+	</div>
+</template>
